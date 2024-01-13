@@ -56,6 +56,7 @@ nav li {
 nav li a {
   color: #424242;
   text-decoration: none;
+  font-size: 1.3rem;
 }
 
 /* banner related style  */
@@ -170,6 +171,9 @@ main {
   .team-container, .features {
     flex-direction: column;
   }
+  nav{
+    gap: 20px;
+  }
   .features-content {
     width: 330px;
   }
@@ -200,6 +204,9 @@ main {
   nav,
   .team-container, .features {
     flex-direction: column;
+  }
+  nav{
+    gap: 20px;
   }
   .features-img img{
     width: 95%;
