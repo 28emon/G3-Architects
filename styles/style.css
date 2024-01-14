@@ -140,7 +140,7 @@ main {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.features-img img{
+.features-img img {
   margin-left: 50px;
 }
 .ten-year {
@@ -153,12 +153,78 @@ main {
   text-align: center;
   padding: 45px 40px;
 }
-.ten-year h2{
+.ten-year h2 {
   color: #fff;
 }
-.ten-year p{
+.ten-year p {
   font-size: 1.5rem;
   color: #fff;
+}
+
+/* cards related style */
+.card-section > p {
+  width: 600px;
+  margin-top: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 50px 20px 0 20px;
+}
+
+.card-state {
+  font-size: 2.8rem;
+  color: #424242;
+  font-weight: 600;
+}
+
+.card-title {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* sponsors styles */
+
+.sponsors {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.sponsors > p {
+  width: 550px;
+  margin: 10px auto;
+}
+
+.sponsors-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* footer styles */
+
+footer {
+  width: 1200px;
+  height: 60px;
+  border-radius: 8px;
+  background: #fff4e7;
+  margin: 100px auto;
+}
+
+footer>h4{
+  text-align: center;
+  padding-top: 20px;
 }
 
 /* responsive related style  */
@@ -168,14 +234,34 @@ main {
     padding: 20px;
   }
   nav,
-  .team-container, .features {
+  .team-container,
+  .features,
+  .cards-container,
+  .sponsors-img {
     flex-direction: column;
   }
-  nav{
+  .primary-btn {
+    font-size: 1rem;
+    padding: 18px 22px;
+  }
+  nav {
     gap: 20px;
+  }
+  nav ul{
+    padding-left: 20px;
+  }
+  nav li a{
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .combined-title{
+    font-size: 2.8rem;
   }
   .features-content {
     width: 330px;
+    padding-left: 20px;
   }
   .team-img {
     grid-template-columns: 1fr;
@@ -183,16 +269,63 @@ main {
   .team-content {
     padding: 0 20px;
   }
-  .features{
+  .features {
     gap: 0px;
+    margin-top: 50px;
   }
-  .features-img img{
+  .features-img img {
     width: 95%;
     margin-left: 10px;
   }
+
+  .cards-container {
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .card-section > p {
+    width: 350px;
+    margin-left: 10px;
+  }
+  .card-section > h1 {
+    margin-left: 10px;
+  }
+  .sponsors-img > img {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .sponsors > p {
+    width: 350px;
+    margin: 5px auto;
+  }
+  .sponsors {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    width: 90%;
+    height: 80px;
+    margin: 80px auto;
+  }
+  footer h4{
+    font-size: 0.9rem;
+  }
   .ten-year {
+    width: 270px;
+    padding: 25px 20px;
     position: static;
-    /* margin: 5px 30px 5px 30px; */
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin: -4px 0 30px 30px;
+    z-index: 999;
+  }
+  .ten-year h2 {
+    font-size: 2rem;
+  }
+  .ten-year p {
+    font-size: 1rem;
   }
 }
 
@@ -202,22 +335,61 @@ main {
     padding: 50px;
   }
   nav,
-  .team-container, .features {
+  .team-container,
+  .features,
+  .cards-container {
     flex-direction: column;
   }
-  nav{
+  
+  nav {
     gap: 20px;
   }
-  .features-img img{
+  .team-img {
+    gap: 20px;
+    padding-left: 25px;
+  }
+  .team-img>img{
+    max-width: 90%;
+  }
+  .features-img img {
     width: 95%;
-    margin-left: 30px;
+    margin-left: 15px;
   }
   .ten-year {
     position: static;
     margin: 5px auto;
   }
-.features{
-  gap: 10px;
-  align-items: center;
-}
+  .features {
+    gap: 10px;
+    align-items: center;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    gap: 50px;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .card-section > p {
+    margin-left: 20px;
+  }
+  .card-section > h1 {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .sponsors-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 40px;
+  }
+  .sponsors {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  footer {
+    width: 98%;
+    margin: 80px auto;
+  }
 }
