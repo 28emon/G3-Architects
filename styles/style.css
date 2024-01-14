@@ -291,8 +291,12 @@ footer>h4{
   .card-section > h1 {
     margin-left: 10px;
   }
+  .sponsors-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .sponsors-img > img {
-    width: 50%;
+    width: 60%;
     margin: 10px auto;
   }
   .sponsors > p {
@@ -300,14 +304,14 @@ footer>h4{
     margin: 5px auto;
   }
   .sponsors {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   footer {
     width: 90%;
     height: 80px;
-    margin: 80px auto;
+    margin: 0 auto 50px auto;
   }
   footer h4{
     font-size: 0.9rem;
